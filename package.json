@@ -7,6 +7,7 @@
     "start": "node dist/index.js",
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "npm ci && tsc --skipLibCheck",
+    "postinstall": "npm rebuild bcrypt --build-from-source",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
